@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia Profissional de Desenvolvimento Web</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Guia Profissional de Desenvolvimento Web</h1>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button aria-label="Abrir menu" id="btn-menu">&#9776;</button>
+        <button aria-label="Alternar tema claro/escuro" id="btn-tema" title="Alternar tema" style="background: var(--color-secondary); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+          <span id="icon-tema">🌙</span>
+        </button>
+      </div>
+      <ul id="menu" hidden>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="boas-praticas.html">Boas Práticas</a></li>
+        <li><a href="fluxo.html">Fluxo</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Seu guia completo para desenvolvimento web profissional</h2>
+      <button id="btn-comecar">Começar</button>
+    </section>
+
+    <section id="o-que-e">
+      <h2>O que é HTML, CSS e JavaScript?</h2>
+      <div class="cards">
+        <article>
+          <h3>HTML</h3>
+          <p>Linguagem de marcação para estruturar conteúdo na web.</p>
+          <pre><code>&lt;p&gt;Olá, mundo!&lt;/p&gt;</code></pre>
+          <p>Usado para criar a estrutura básica da página.</p>
+        </article>
+        <article>
+          <h3>CSS</h3>
+          <p>Linguagem para estilizar elementos HTML.</p>
+          <pre><code>p { color: blue; }</code></pre>
+          <p>Usado para definir aparência visual.</p>
+        </article>
+        <article>
+          <h3>JavaScript</h3>
+          <p>Linguagem para criar interatividade na página.</p>
+          <pre><code>console.log('Olá, mundo!');</code></pre>
+          <p>Usado para manipular conteúdo dinamicamente.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="tecnologias.html">Tecnologias</a> |
+      <a href="boas-praticas.html">Boas Práticas</a> |
+      <a href="fluxo.html">Fluxo</a> |
+      <a href="quiz.html">Quiz</a>
+    </nav>
+    <p>© 2025 Seu Nome</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
