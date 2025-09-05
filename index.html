@@ -33,27 +33,57 @@
       <button id="btn-comecar">Começar</button>
     </section>
 
-    <section id="o-que-e">
-      <h2>O que é HTML, CSS e JavaScript?</h2>
-      <div class="cards">
-        <article>
-          <h3>HTML</h3>
-          <p>Linguagem de marcação para estruturar conteúdo na web.</p>
-          <pre><code>&lt;p&gt;Olá, mundo!&lt;/p&gt;</code></pre>
-          <p>Usado para criar a estrutura básica da página.</p>
-        </article>
-        <article>
-          <h3>CSS</h3>
-          <p>Linguagem para estilizar elementos HTML.</p>
-          <pre><code>p { color: blue; }</code></pre>
-          <p>Usado para definir aparência visual.</p>
-        </article>
-        <article>
-          <h3>JavaScript</h3>
-          <p>Linguagem para criar interatividade na página.</p>
-          <pre><code>console.log('Olá, mundo!');</code></pre>
-          <p>Usado para manipular conteúdo dinamicamente.</p>
-        </article>
+    <section id="introducao" class="cards-section">
+      <div class="container">
+        <h3 class="section-title">O que são HTML, CSS e JavaScript?</h3>
+        <div class="cards">
+          
+          <!-- CARD HTML -->
+          <article class="card">
+            <h4><span aria-hidden="true" class="card-icon">📄</span> HTML</h4>
+            <p><strong>HTML</strong> (HyperText Markup Language) define a estrutura de uma página web. Ele organiza o conteúdo em seções, títulos, listas, imagens e links.</p>
+            <pre><code>&lt;article&gt;
+  &lt;h2&gt;Meu Blog&lt;/h2&gt;
+  &lt;p&gt;Bem-vindo ao meu site!&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+            <ul class="card-dicas">
+              <li>✅ Essencial para criar páginas.</li>
+              <li>⚠️ Não define aparência ou interatividade.</li>
+            </ul>
+            <p><strong>Quando usar:</strong> sempre que for estruturar conteúdo em uma página web.</p>
+          </article>
+
+          <!-- CARD CSS -->
+          <article class="card">
+            <h4><span aria-hidden="true" class="card-icon">🎨</span> CSS</h4>
+            <p><strong>CSS</strong> (Cascading Style Sheets) é usado para estilizar o HTML, definindo cores, tamanhos, espaçamentos, fontes e layouts responsivos.</p>
+            <pre><code>article {
+  background: #F3F4F6;
+  border-radius: 8px;
+}</code></pre>
+            <ul class="card-dicas">
+              <li>✅ Ideal para aparência e design.</li>
+              <li>⚠️ Evite usar estilos inline direto no HTML.</li>
+            </ul>
+            <p><strong>Quando usar:</strong> ao definir estilos visuais e responsividade.</p>
+          </article>
+
+          <!-- CARD JavaScript -->
+          <article class="card">
+            <h4><span aria-hidden="true" class="card-icon">⚙️</span> JavaScript</h4>
+            <p><strong>JavaScript</strong> adiciona interatividade ao site. Ele permite controlar cliques, formular lógicas, animações e comunicação com APIs.</p>
+            <pre><code>document.querySelector('button')
+  .addEventListener('click', () =&gt; {
+    alert('Você clicou!');
+});</code></pre>
+            <ul class="card-dicas">
+              <li>✅ Essencial para criar sites dinâmicos.</li>
+              <li>⚠️ Evite misturar JS e HTML demais.</li>
+            </ul>
+            <p><strong>Quando usar:</strong> para interações, animações e lógica de navegação.</p>
+          </article>
+
+        </div>
       </div>
     </section>
   </main>
