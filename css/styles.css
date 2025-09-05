@@ -105,6 +105,45 @@ body.dark .quiz-result {
   background: #334155;
 }
 
+.explicacoes {
+  margin-top: 2rem;
+}
+
+.questao-revisao {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid;
+}
+
+.questao-revisao.correta {
+  border-color: #10B981;
+  background: #ECFDF5;
+}
+
+.questao-revisao.incorreta {
+  border-color: #EF4444;
+  background: #FEF2F2;
+}
+
+.questao-revisao h5 {
+  margin: 0 0 1rem 0;
+  color: var(--color-primary);
+}
+
+body.dark .questao-revisao {
+  background: #1e293b;
+}
+
+body.dark .questao-revisao.correta {
+  background: #064E3B;
+}
+
+body.dark .questao-revisao.incorreta {
+  background: #7F1D1D;
+}
+
 /* Variáveis de tema claro */
 :root {
   --color-primary: #2563EB;
