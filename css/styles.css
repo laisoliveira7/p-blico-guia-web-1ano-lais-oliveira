@@ -83,13 +83,34 @@ nav h1 {
   font-size: 1.3rem;
   margin: 0;
 }
-#btn-menu {
+#menu-toggle {
   background: none;
   border: none;
   color: #fff;
   font-size: 2rem;
   cursor: pointer;
   display: none;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+  
+  nav ul {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-primary);
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav ul.active {
+    display: flex !important;
+  }
 }
 nav ul {
   list-style: none;
